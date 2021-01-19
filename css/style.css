@@ -761,6 +761,19 @@ footer {
             font-weight: 400;
             text-decoration: none;
             color: #9b9ca0;
-            text-transform: capitalize; }
+            text-transform: capitalize;
+            position: relative; }
+            footer .footer-content .footer-menu ul li a::after {
+              content: '';
+              width: 0%;
+              height: 3px;
+              position: absolute;
+              background-color: #f77236;
+              left: 50%;
+              top: 100%;
+              transform: translateX(-50%);
+              transition: all .2s; }
+            footer .footer-content .footer-menu ul li a:hover::after {
+              width: 100%; }
 
 /*====================== footer  section end =======================*/

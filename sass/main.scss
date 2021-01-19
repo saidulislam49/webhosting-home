@@ -962,6 +962,23 @@ footer{
                         text-decoration: none;
                         color: #9b9ca0;
                         text-transform: capitalize;
+                        position: relative;
+
+                        &::after{
+                            content: '';
+                            width:0%;
+                            height: 3px;
+                            position: absolute;
+                            background-color: #f77236;
+                            left: 50%;
+                            top: 100%;
+                            transform: translateX(-50%);
+
+                            transition: all .2s;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
                     }
                 }
             }
